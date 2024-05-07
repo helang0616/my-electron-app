@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>调用 rcc 程序</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <label for="username" id="dirLabel">用户名：</label>
+    <input type="text" id="username"  placeholder="连接用户名">
+    <button id="connect">连接</button>
+    <button id="disconnect" disabled="disabled">断开</button>
+    <button type="button" id="btn">Open a File</button>
+    <label for="filePath" id="dirLabel">Robot 目录：</label>
+    <strong id="filePath"></strong>
+    <button id="runExeBtn">运行 robot 程序</button>
+    <button id="stopBtn">终止 robot 程序</button>
+    <button id="clearOutputBtn">清空输出内容</button>
+    <textarea id="output" readonly></textarea>
+    <script src="renderer.js"></script>
+    <script src="conn.js"></script>
+    <script src="stomp.umd.min.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
+</body>
+</html>

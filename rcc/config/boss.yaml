@@ -1,0 +1,31 @@
+name: boss
+description: boss settings.yaml internal to rcc
+settings:
+  autoupdates:
+    assistant: https://downloads.robocorp.com/assistant/releases/
+    setup-utility: https://downloads.robocorp.com/setup-utility/releases/
+    templates: https://downloads.robocorp.com/templates/templates.yaml
+    workforce-agent: https://downloads.robocorp.com/workforce-agent/releases/
+  certificates:
+    verify-ssl: true
+    ssl-no-revoke: false
+    legacy-renegotiation-allowed: false
+  network:
+    no-proxy: ""
+    https-proxy: ""
+    http-proxy: ""
+  endpoints:
+    cloud-api: https://api.eu1.robocorp.com/
+    cloud-linking: https://cloud.robocorp.com/link/
+    cloud-ui: https://cloud.robocorp.com/
+    docs: https://robocorp.com/docs/
+    downloads: https://downloads.robocorp.com/
+    issues: https://telemetry.robocorp.com/
+    pypi: https://pypi.tuna.tsinghua.edu.cn/simple
+    pypi-trusted: https://pypi.tuna.tsinghua.edu.cn
+    telemetry: https://telemetry.robocorp.com/
+  meta:
+    name: boss
+    description: boss settings.yaml internal to rcc
+    source: setup-utility
+    version: undefined
