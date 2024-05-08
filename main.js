@@ -47,7 +47,7 @@ app.on('activate', () => {
 // 监听渲染进程发送的消息
 ipcMain.on('rcc:run', (event, sender, args) => {
     // 执行 rcc 命令
-    var execCommand = rccExecutionPath;
+    var execCommand = `node ${rccExecutionPath}`;
     for (const arg of args) {
         execCommand += ` ${arg}`;
     }
