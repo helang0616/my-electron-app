@@ -25,8 +25,8 @@ function createWindow() {
             preload: path.join(__dirname, 'preload.js')
         }
     });
-
-    win.loadFile('index.html');
+    // win.loadFile('public/index.html');
+    win.loadURL('http://localhost:8080/electron/index.html');
     setRccConfiguration();
 }
 
@@ -107,6 +107,10 @@ async function handleFileOpen() {
     }
 }
 ipcMain.handle('dialog:openFile', handleFileOpen);
+
+ipcMain.handle('dialog:showMessageBox', (event, message) => {
+    dialog.showMessageBox({message});
+});
 
 
 

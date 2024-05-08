@@ -12,7 +12,7 @@ function setConnected(connected) {
 function connect() {
     var username = $("#username").val();
     if (!username || username.length === 0) {
-        alert("请输入连接用户名");
+        window.electronAPI.showDialog("请输入连接用户名");
         return;
     }
     stompClient = new StompJs.Client({
